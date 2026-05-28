@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Renan Camargo — Project Management & Innovation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body, #root { background: #0C0C0C; margin: 0; padding: 0; }
+  body { font-family: 'Kanit', sans-serif; color: #D7E2EA; -webkit-font-smoothing: antialiased; }
+  .font-mono-tag { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+  .hero-heading {
+    background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .contact-pill {
+    background:
+      linear-gradient(135deg,
+        oklch(0.42 0.08 250) 0%,
+        oklch(0.50 0.10 230) 45%,
+        oklch(0.58 0.08 200) 100%);
+    box-shadow:
+      0 6px 24px -8px rgba(40, 60, 90, 0.55),
+      inset 0 1px 0 rgba(255, 255, 255, 0.18),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+    outline: 1px solid rgba(215, 226, 234, 0.18);
+    outline-offset: -1px;
+    transition: filter 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+  }
+  .contact-pill:hover {
+    filter: brightness(1.08);
+    box-shadow:
+      0 8px 28px -8px rgba(40, 60, 90, 0.7),
+      inset 0 1px 0 rgba(255, 255, 255, 0.22),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+  }
+  .ghost-pill { transition: background-color 200ms ease; }
+  .ghost-pill:hover { background-color: rgba(215, 226, 234, 0.10); }
+  /* hide scrollbar from horizontal marquee */
+  .marquee-row { will-change: transform; }
+  /* Section roundings stack */
+  body { overflow-x: clip; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="env,react" src="components.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="interactive-mesh.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="app.jsx"></script>
+</body>
+</html>
